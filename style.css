@@ -1,0 +1,80 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e5d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+}
+
+/* Message Box Styling */
+.message-box {
+    background-color: #f5a623;
+    border-radius: 10px;
+    padding: 50px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+}
+
+.birthday-message {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+}
+
+.greeting {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
